@@ -49,11 +49,3 @@ python OriginFinder.py example.com
 ## ⚠️ Disclaimer
 
 This tool is intended for educational purposes only. Unauthorized usage against domains without proper authorization is strictly prohibited.
-
-## 🛠️ Contributing
-
-* Fork the repository
-* Create a new branch (`git checkout -b feature/your-feature`)
-* Commit your changes (`git commit -am 'Add new feature'`)
-* Push to the branch (`git push origin feature/your-feature`)
-* Open a Pull Request
