@@ -29,6 +29,8 @@ Identify the origin IP address of a domain behind a CDN by leveraging subdomain 
    pip install requests tldextract
    ```
 
+3. **Add your Shodan key to `config.py`**
+   
 ---
 
 ## 🧪 Usage
