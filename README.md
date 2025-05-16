@@ -1,51 +1,60 @@
-# OriginFinder 🔍🚀
+# OriginFinder
 
 Identify the origin IP address of a domain behind a CDN by leveraging subdomain enumeration, DNS lookups, and Shodan historical data.
 
-## ⚡️ Features
+---
 
-* Subdomain Enumeration using crt.sh
-* DNS Lookup for CDN IP addresses
-* Shodan Historical IP Search
-* Content Matching to Identify Origin IPs
-* Detection of Missing CDN Headers
+## ✅ Features
 
-## 🚀 Installation
+* 🌐 **DNS and CDN IP Detection:** Identifies IP addresses associated with a domain via DNS lookups.
+* 🕵️ **Subdomain Enumeration:** Gathers subdomains using **crt.sh** data.
+* 🛰️ **Shodan Historical IP Analysis:** Fetches potential origin IPs using Shodan API.
+* 🛠️ **Content Comparison:** Identifies origin IPs by comparing HTTP response content with the main domain.
+* 🚫 **CDN Header Detection:** Flags missing CDN headers to indicate potential origin exposure.
 
-1. Clone the repository:
+---
 
-```bash
-git clone https://github.com/cdrom0/OriginFinder.git
-cd OriginFinder
-```
+## 🛠️ Installation
 
-2. Install the required dependencies:
+1. **Clone the repository:**
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   git clone https://github.com/cdrom0/OriginFinder.git
+   cd OriginFinder
+   ```
 
-3. Obtain Shodan API Key and configure it in `config.py`.
+2. **Install required packages:**
 
-## ✅ Usage
+   ```bash
+   pip install requests tldextract
+   ```
 
-Run the script with a target domain:
+---
+
+## 🧪 Usage
 
 ```bash
 python OriginFinder.py <domain>
 ```
 
-Example:
+### 📦 Arguments:
 
-```bash
-python OriginFinder.py example.com
-```
+* `<domain>`: The target domain to analyze for origin exposure.
+
+### 💻 Example:
+
+1. Check a domain for origin exposure:
+
+   ```bash
+   python OriginFinder.py example.com
+   ```
+
+---
 
 ## 📦 Output
 
-* Displays CDN IPs, Subdomains, Shodan IPs, and potential origin IPs.
-* Identifies missing CDN headers that indicate origin exposure.
-
-## ⚠️ Disclaimer
-
-This tool is intended for educational purposes only. Unauthorized usage against domains without proper authorization is strictly prohibited.
+* 🛡️ **CDN IPs:** IPs associated with the domain's CDN.
+* 🌐 **Subdomains:** Detected subdomains via crt.sh.
+* 📜 **Historical IPs:** Potential origin IPs from Shodan data.
+* 🕵️ **Origin IP Analysis:** Identifies potential origin IPs by content comparison.
+* ⚠️ **CDN Header Analysis:** Flags missing CDN headers to indicate direct origin exposure.
