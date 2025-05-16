@@ -1,4 +1,4 @@
-# Origin Finder 🔍🚀
+# OriginFinder 🔍🚀
 
 Identify the origin IP address of a domain behind a CDN by leveraging subdomain enumeration, DNS lookups, and Shodan historical data.
 
