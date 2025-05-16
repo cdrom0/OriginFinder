@@ -25,7 +25,7 @@ cd OriginFinder
 pip install -r requirements.txt
 ```
 
-3. Obtain Shodan API Key and configure it in `utils/shodan_utils.py`.
+3. Obtain Shodan API Key and configure it in `config.py`.
 
 ## ✅ Usage
 
